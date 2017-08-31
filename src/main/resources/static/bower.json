@@ -1,0 +1,7 @@
+{
+  "name": "aplikasi-halo",
+  "dependencies": {
+    "webcomponentsjs": "^0.7.2",
+    "iron-label": "PolymerElements/iron-label#^2.0.0"
+  }
+}

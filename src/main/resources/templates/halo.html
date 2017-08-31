@@ -1,0 +1,14 @@
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Home Springboot</title>
+    <link rel="stylesheet" href="style/mystyle.css"/>
+    <link rel="import" src="bower_components/iron-label/iron-label.html"/>
+</head>
+<body>
+Ini dari halo.html<br/>
+    waktu saat ini : <br/>
+    <iron-label class="light-bgcolor"><span th:text="${waktu}">Senin, 17 Agustus 2017</span></iron-label>
+<br/><br/>
+    <iron-label><span th:text="${msg}"/></iron-label>
+</body>
+</html>
