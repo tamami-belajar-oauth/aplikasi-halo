@@ -10,5 +10,9 @@ Ini dari halo.html<br/>
     <iron-label class="light-bgcolor"><span th:text="${waktu}">Senin, 17 Agustus 2017</span></iron-label>
 <br/><br/>
     <iron-label><span th:text="${msg}"/></iron-label>
+
+    <form id="logout" name="f_logout" th:action="@{/logout}" method="post">
+        <input type="submit" value="Keluar" />
+    </form>
 </body>
 </html>
