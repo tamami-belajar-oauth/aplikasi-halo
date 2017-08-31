@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
     <title>LoginTitle</title>
+    <link rel="import" src="bower_components/iron-label/iron-label.html" />
+    <link rel="stylesheet" href="style/mystyle.css" />
 </head>
 <body>
-    <login-form></login-form>
+    <form id="form" method="post" th:action="@{/login}">
+        <div id="msg" style="display: block" th:if="${param.error}">Username / Password Salah.</div>
+        <div id="msg" style="display: block" th:if="${param.logout}">Telah Keluar Otomatis.</div>
+        <fieldset name="username">
+            <iron-label>Username</iron-label>
+            <input type="username" name="username" />
+        </fieldset>
+        <fieldset name="password">
+            <iron-label>Password</iron-label>
+            <input type="password" name="password" />
+        </fieldset>
+        <fieldset>
+            <input type="submit" value="Masuk" />
+        </fieldset>
+    </form>
 </body>
 </html>
